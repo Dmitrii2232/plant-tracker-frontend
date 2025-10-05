@@ -1,4 +1,4 @@
-/* Глобальные стили для Трекера Растений */
+
 html,
 body {
   padding: 0;
@@ -12,14 +12,14 @@ body {
   box-sizing: border-box;
 }
 
-/* Стили для навигации */
+
 .navbar-brand {
   font-weight: bold;
   color: #2e7d32 !important;
   font-size: 1.3rem;
 }
 
-/* Стили для карточек растений */
+
 .plant-card {
   transition: transform 0.2s ease-in-out;
   border: none;
@@ -33,7 +33,7 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Кнопки */
+
 .btn-success {
   background-color: #2e7d32;
   border-color: #2e7d32;
@@ -55,7 +55,7 @@ body {
   border-color: #2e7d32;
 }
 
-/* Стили для графиков и статистики */
+
 .growth-chart {
   background: white;
   border-radius: 12px;
@@ -74,7 +74,7 @@ body {
   transition: width 0.6s ease;
 }
 
-/* Стили для таблиц */
+
 .table {
   background: white;
   border-radius: 8px;
@@ -94,7 +94,7 @@ body {
   vertical-align: middle;
 }
 
-/* Стили для форм */
+
 .form-control {
   border: 2px solid #e0e0e0;
   border-radius: 8px;
@@ -113,14 +113,14 @@ body {
   margin-bottom: 8px;
 }
 
-/* Стили для баджей и статусов */
+
 .badge {
   font-weight: 500;
   padding: 6px 12px;
   border-radius: 20px;
 }
 
-/* Стили для вкладок */
+
 .nav-tabs .nav-link {
   color: #666;
   font-weight: 500;
@@ -134,7 +134,7 @@ body {
   border-bottom: 3px solid #2e7d32;
 }
 
-/* Анимации */
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -144,7 +144,7 @@ body {
   animation: fadeIn 0.5s ease-in-out;
 }
 
-/* Адаптивность */
+
 @media (max-width: 768px) {
   .plant-card {
     margin-bottom: 20px;
@@ -156,7 +156,7 @@ body {
   }
 }
 
-/* Кастомные scrollbar */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -175,7 +175,7 @@ body {
   background: #1b5e20;
 }
 
-/* Стили для состояний загрузки */
+
 .loading-spinner {
   display: inline-block;
   width: 20px;
@@ -191,7 +191,7 @@ body {
   100% { transform: rotate(360deg); }
 }
 
-/* Стили для пустых состояний */
+
 .empty-state {
   text-align: center;
   padding: 40px 20px;
