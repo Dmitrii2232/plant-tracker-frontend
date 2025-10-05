@@ -52,7 +52,7 @@ function CareTasks() {
         setSuccess('Задача успешно добавлена!');
         fetchTasks();
         
-        // Автоматически скрываем сообщение об успехе через 3 секунды
+        
         setTimeout(() => setSuccess(''), 3000);
       }
     } catch (err) {
@@ -150,17 +150,17 @@ function CareTasks() {
     });
   };
 
-  // Фильтруем задачи
+  
   const pendingTasks = tasks.filter(task => !task.completed);
   const completedTasks = tasks.filter(task => task.completed);
 
-  // Сортируем pending задачи по приоритету и дате
+  
   const sortedPendingTasks = [...pendingTasks].sort((a, b) => {
-    // Сначала по приоритету (высокий приоритет первый)
+    
     if (a.priority !== b.priority) {
       return a.priority - b.priority;
     }
-    // Затем по дате выполнения (ближайшие даты первые)
+    
     return new Date(a.dueDate) - new Date(b.dueDate);
   });
 
